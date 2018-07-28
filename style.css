@@ -1,0 +1,60 @@
+/******* START
+**** Global Classes
+***/
+body{
+    color:#555;
+}
+label{
+    letter-spacing: 1.1px;
+}
+.block{
+    display: block;
+}
+input[type="submit"],input[type="reset"]{
+    width:200px;
+    margin-left: 4px;
+    font-weight: bold;
+}
+input:not([type="checkbox"]){
+    margin-bottom: 15px;
+}
+input[type=checkbox]{
+    width: 17px;
+    height:17px;
+    margin:0px;
+    padding:0px;
+}
+span{
+    font-weight: bold;
+}
+ul{
+    list-style-type: none;
+}
+/*
+input[type="text"],input[type="email"]{
+    width: 100%;
+}*/
+
+/******* End
+**** Global Classes
+***/
+
+
+/*** Main Style
+*
+*/
+header h1{
+    padding-top:20px;
+}
+/* END MAIN STYLE */
+
+/*** Bootstrap Overriding
+*
+*/
+ header .container{
+    margin: 0 auto;
+    width:50%;
+}
+.applicationForm{
+    padding-top: 20px;
+}

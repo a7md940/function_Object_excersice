@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enter</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Application Form</h1>
+        <div class="container">
+            <div class="row">
+                <form class="form-group applicationForm">
+                    <div class="row">
+                        <div class="col">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName">
+                        </div>
+                        <div class="col">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName">
+                        </div>
+                    </div>            
+                    <div class="row">
+                        <div class="col">
+                                <label for="gender" class="block">Gender</label>
+                                <input type="checkbox"  id="female" > <label for="female">Female</label> 
+                                <input type="checkbox" id="male" > <label for="male">Male</label>
+                        </div>
+                        <div class="col">
+                                <label for="dateOfBirth">Date Of Birth</label>
+                                <input type="date" class="form-control" id="dateOfBirth">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="nationality">Nationality</label>
+                            <input type="text" class="form-control" id="nationality">
+                        </div>
+                        <div class="col">
+                            <label for="country">Country</label>
+                            <input type="text" class="form-control" id="country">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" class="form-control" id="phone">
+                        </div>
+                        <div class="col">
+                                <label for="email">E-Mail</label>
+                                <input type="email" class="form-control" id="email">
+                        </div>
+                    </div>
+                    <p>Do you have any long term medical conditions, disability, impairment which may affect your learning goals and APSI should be aware of?</p>
+                    <input type="checkbox" id="yes"> <label for="yes">Yes</label>
+                    <input type="checkbox" id="no"> <label for="no">No</label>
+                    <div class="row">
+                            <input type="reset" value="Reset" class="btn btn-info"> 
+                            <input type="button" value="Send" class="btn btn-success" id="submit"> 
+                            <input type="button" value="Show" class="btn btn-danger" id="show"> 
+                    </div>
+                    
+            </form>
+            <div id="content">
+                <ul>
+                    <li id="firstNameShow"></li>
+                    <li id="lastNameShow"></li>
+                    <li id="nationalityShow"></li>
+                    <li id="countryShow"></li>
+                    <li id="phoneShow"></li>
+                    <li id="mailShow"></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>
